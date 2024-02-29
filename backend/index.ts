@@ -8,7 +8,8 @@ const app = express()
 const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://dilemma-delight.tdib.xyz",
     methods: ["GET", "POST"],
     // allowedHeaders: ["my-custom-header"],
     // credentials: true
