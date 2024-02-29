@@ -5,6 +5,19 @@
   import io from "socket.io-client"
   import LandingPage from "../pages/LandingPage.svelte"
   import GamePage from "../pages/GamePage.svelte"
+  import Image from "../pages/Image.svelte"
+
+  let imageNames = [
+    "dibearhoodie.png",
+    "dibhoodpull.png",
+    "diblaydown.png",
+    "dibskate.png",
+    "dibthing.png",
+    "dibtoiletrollthing.png",
+    "dibtpclaydown.png",
+    "dibvr.png",
+    "dibwhat.png",
+  ]
 
   let socket: Socket
 
@@ -45,3 +58,7 @@
     on:isAdminChange={handleIsAdminChange}
   />
 {/if}
+
+{#each imageNames as imageName}
+  <Image imageName={imageName} />
+{/each}
