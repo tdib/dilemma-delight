@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Red or green apples?",
+        "optionA": "Red",
+        "optionB": "Green"
+    },
+    {
+        "question": "Speak all foreign languages or speak to animals?",
+        "optionA": "All foreign languages",
+        "optionB": "Animals"
+    },
+    {
+        "question": "Spend the night in or out?",
+        "optionA": "Night in",
+        "optionB": "Night out"
+    },
+    {
+        "question": "Winter or summer?",
+        "optionA": "Winter",
+        "optionB": "Summer"
+    },
+    {
+        "question": "Travel back in time or to the future?",
+        "optionA": "Back in time",
+        "optionB": "To the future"
+    }
+
+]
