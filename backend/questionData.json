@@ -23,6 +23,10 @@
         "question": "Travel back in time or to the future?",
         "optionA": "Back in time",
         "optionB": "To the future"
+    },
+    {
+        "question": "Dogs or cats?",
+        "optionA": "Dogs",
+        "optionB": "Cats"
     }
-
 ]

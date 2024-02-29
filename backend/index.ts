@@ -33,13 +33,17 @@ type QuestionResult = {
   optionB: string,
   optionBRespondents: User[]
 }
-let questionResults: QuestionResult[] = questionData.map((data) => ({
-  question: data.question,
-  optionA: data.optionA,
-  optionARespondents: [],
-  optionB: data.optionB,
-  optionBRespondents: [],
-}))
+
+function parseQuestionData() {
+  return questionData.map((data) => ({
+    question: data.question,
+    optionA: data.optionA,
+    optionARespondents: [],
+    optionB: data.optionB,
+    optionBRespondents: [],
+  }))
+}
+let questionResults: QuestionResult[] = parseQuestionData()
 console.log(questionResults);
 
 function refreshUsersOnClient() {
@@ -78,6 +82,7 @@ io.on("connection", (socket) => {
   // Start the game session for all users
   socket.on("sessionUpdate", () => {
     hasSessionStarted = true
+    questionResults = parseQuestionData()
     io.emit("sessionUpdate", hasSessionStarted)
   })
 
