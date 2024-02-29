@@ -21,7 +21,7 @@
 
   onMount(() => {
     // socket = io("http://localhost:3000")
-    socket = io("http://api.dilemma-delight.tdib.xyz")
+    socket = io("https://api.dilemma-delight.tdib.xyz")
 
     socket.on("userListUpdate", (newUserList: User[]) => {
       console.log("received from server:", newUserList);
